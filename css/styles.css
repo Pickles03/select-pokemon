@@ -1,1 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(150deg, white, rgb(88, 209, 23)) no-repeat center center fixed;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* The key change: use 100vh to ensure the container is the full screen height */
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container h1 {
+    margin: 0;
+    font-size: 70px;
+    font-family: 'Honk';
+    text-align: center;
+  }
 
+
+.honk {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
+
+
+.container h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Honk';
+}
+
+.pokemon-form {
+    display: flex;
+    gap: 20px;
+}
+
+#pokemon-select {
+    background-color: rgb(194, 221, 142);
+    border: none;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#get-pokemon {
+    background-color: rgb(194, 221, 142);
+    border: none;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#pokemon-select:hover, #get-pokemon:hover {
+    background-color: rgb(88, 209, 23);
+    color: white;
+}
+
+#pokemon-info h2::first-letter {
+    text-transform: uppercase;
+  }
+
+#pokemon-info h2 {
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+#pokemon-info img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+#pokemon-info p {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
